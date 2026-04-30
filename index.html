@@ -110,9 +110,7 @@ margin:15px 0;
 }
 
 #carrito{
-position:fixed;
-top:20px;
-right:20px;
+margin:40px auto;
 background:white;
 padding:15px;
 border-radius:15px;
@@ -150,6 +148,7 @@ margin-top:40px;
 <nav>
 <a href="#inicio">Inicio</a>
 <a href="#productos">Productos</a>
+<a href="#carrito">Carrito</a>
 <a href="#pago">Pago</a>
 <a href="#contacto">Contacto</a>
 </nav>
@@ -233,7 +232,10 @@ Con Manos Mexicanas busca reconectar a las personas con la naturaleza mediante h
 </p>
 </section>
 
-<div id="carrito">
+<section class="section" id="carrito">
+<h2>🛒 Carrito de Compras</h2>
+
+<div style="background:white;padding:20px;border-radius:15px;box-shadow:0 0 10px gray;width:300px;margin:auto;">
 <h3>🛒 Carrito</h3>
 
 <ul id="listaCarrito">
@@ -246,7 +248,9 @@ Total: $<span id="total">0</span> MXN
 <button class="btn" onclick="vaciarCarrito()">
 Vaciar carrito
 </button>
+
 </div>
+</section>
 
 <section class="section" id="pago">
 <h2>💳 Pantalla de Pago</h2>
