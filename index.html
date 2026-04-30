@@ -150,9 +150,28 @@ Sobre Nosotros
 Con Manos Mexicanas busca reconectar a las personas con la naturaleza mediante huertos caseros ecológicos y sostenibles.
 </p></section><footer><p>
 © 2026 Con Manos Mexicanas
-</p></footer><script>
+</p><<div id="carrito" style="position:fixed; top:20px; right:20px; background:white; padding:15px; border-radius:10px; box-shadow:0 0 10px gray;">
+
+<h3>🛒 Carrito</h3>
+
+<p id="contador">
+0 productos
+</p>
+
+</div>
+
+<script>
+
+let cantidad = 0;
+
 function agregarCarrito(){
-alert("Producto agregado al carrito 🛒");
+
+cantidad++;
+
+document.getElementById("contador").innerHTML =
+cantidad + " productos";
+
 }
+
 </script></body>
 </html>
